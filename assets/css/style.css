@@ -1,0 +1,324 @@
+*{
+margin: 0;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1em;
+  background-color: #1f2039;
+}
+
+a {
+  color: #242424;
+  text-decoration: none;
+}
+
+a:hover{
+text-decoration: underline;
+}
+
+em {
+  color: #a5b4fc;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 3.5em;
+  color: #a5b4fc;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  color: #f9f8ff;
+}
+
+p,
+li {
+  font-size: 1.1em;
+  color: #f9f8ff;
+}
+
+.entete,
+.pied-de-page{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+background-color: white;
+margin-bottom: 20px;
+padding: 20px 50px;
+}
+
+.entete a{
+  margin-left: 30px;
+}
+
+.pied-de-page a{
+  padding : 50 px;
+
+}
+
+nav{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content1 p{
+  margin-bottom: 40px ;
+}
+
+.content1 h1{
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.cta {
+  background: linear-gradient(#8e86b5, #acaeed);
+  color: white;
+  border-radius: 50px;
+  padding: 20px 30px;
+}
+.cta:hover{
+background: linear-gradient(90deg, rgba(105,100,132,1) 0%, rgba(135,136,186,1) 100%);
+text-decoration: none;
+}
+
+.skills{
+  border-right: 1px solid #8e86b5;
+  border-bottom: 1px solid #8e86b5;
+  padding: 50px;
+  margin-bottom: 80px;
+}
+
+.skills h2{
+  margin-top: 30px;
+}
+
+.skills ul{
+  margin-top: 30px;
+}
+
+.icon:hover{
+opacity: 0.5;
+}
+
+.about-main {
+  width: 50%;
+  margin: auto;
+}
+
+section{
+  padding: 80px;
+}
+
+.tarif{
+  padding: 80px;
+}
+.principal{
+  display: flex;
+  flex-direction:row ;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+}
+
+.content1{
+  width: 600px;
+}
+
+.logos a{
+  padding: 10px;
+}
+
+.last-projects{
+  background-color: #f9f8ff;
+}
+
+.portfolio{
+  background-color: #f9f8ff;
+}
+
+.last-projects h2{
+  color: #1F2039;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.portfolio h2{
+  color: #1F2039;
+  text-align: start;
+  margin-bottom: 70px;
+}
+
+.first-line{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.second-line {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.third-line{
+  justify-content: center;
+  margin-top: 60px;
+  margin-left: 300px;
+  flex-wrap: wrap;
+
+}
+
+.contact h2{
+  color: #A5B4FC;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.contact{
+padding: 90px;
+}
+
+.grid-paysage{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 300px);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+.grid-portait{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  gap: 15px;
+}
+
+.grid-paysage img,
+.grid-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portrait{
+  margin-top: 70px;
+}
+
+.lien-photos{
+position: relative;
+}
+
+.photo-hover{
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.5em;
+color: white;
+background-color: rgba(0, 0, 0, 0.7);
+display: none;
+}
+
+.lien-photos:hover .photo-hover{
+  display: flex;
+}
+
+.about{
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.btn-cta{
+  text-align: center;
+}
+
+table{
+  border-collapse: collapse;
+  color: white;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+th, td{
+  border: 1px solid #A5B4FC;
+  padding: 15px;
+}
+
+td{
+  padding: 80px;
+}
+
+form{
+  color: white;
+}
+
+.form-nom-email{
+  display: flex;
+  flex-direction: row;
+  gap : 20px;
+}
+
+input, textarea {
+  padding: 15px;
+  border-radius: 3px;
+  border: none;
+}
+
+label{
+margin-bottom: 15px;
+}
+
+.form-column{
+  flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input[type='submit'] {
+  width: 200px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 996px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .entete nav img {
+    margin-bottom: 20px;
+  }
+
+  .entete,
+  footer {
+    padding: 20px 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  section {
+    padding: 50px 20px 50px 20px;
+  }
+
+  nav a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
